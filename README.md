@@ -1,15 +1,19 @@
 # s3vulnScanner
-This tool is built to scan for vulnerable s3 buckets.
+This tool is built to scan for s3 buckets vulnerabilities.
 
 ## Usage:
 
 Step-1: You need to save all your s3 buckets name in alls3.txt file.
 
-Step-2: Run the below commands:
+Step-2: Run the below commands for scanning single bucket:
 ```
-bash s3vulnScanner.sh
+python3 s3vulnScanner_direct.py <bucket-name>
 ```
 
+Step-3: Run the below commands for scanning multiple buckets stored in alls3.txt file:
+```
+python3 s3vulnScanner_direct.py alls3.txt
+```
 All your vulnerable buckets will be aggregated to ohoVulnerable.txt file.
 
-For any query, contact @abhiunix
+For any query, contact @abhiunix[https://x.com/abhiunix]
